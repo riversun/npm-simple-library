@@ -2,6 +2,8 @@
 
 Library template for both node and browser
 
+[![npm version](https://badge.fury.io/js/%40riversun%2Fnpm-simple-library.svg)](https://badge.fury.io/js/%40riversun%2Fnpm-simple-library)
+[![CircleCI](https://circleci.com/gh/riversun/npm-simple-library.svg?style=shield)](https://circleci.com/gh/riversun/npm-simple-library)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Quick start
