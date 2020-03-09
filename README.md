@@ -90,11 +90,23 @@ npm test
 npm test:coverage
 ```
 
-# How it works
+# How to handle library
 
-How webpack builds code as a library.
+### How webpack builds code as a library.
 
 - Please see [this article (english)](https://dev.to/riversun/recipes-on-how-to-create-a-library-that-supports-both-browser-and-node-js-201m).
+
+### Publish as a npm package
+
+```
+npm publish --access=public
+```
+
+### Use library
+
+### Use on browser
+
+### Use on node
 
 
 # Installed modules
@@ -152,6 +164,125 @@ npx install-peerdeps --dev eslint-config-airbnb-base
 
 ## Using Webstorm
 
-How to change Webstorm configuration to match ESLint.
+How to change Webstorm code formatter configuration to match ESLint.
+
+### Change "Indent" for ESLint's "indent"
+
+●**Settings of Webstorm**
+
+Go **Settings > Editor > Code Style > JavaScript > Tabs and Indents Tab**
+
+- Uncheck **Use tab character**
+- Set Tab size,Indent,Continuation indent to **2**
+
+![image](https://user-images.githubusercontent.com/11747460/76207315-e3f2f180-6240-11ea-8cd3-a3906f6ca0d3.png)
 
 
+●**Typical lint error message**  
+
+```
+Expected indentation of 2 spaces but found 4
+```
+
+
+### Change "Before Parentheses" for ESLint's " space-before-function-paren"
+
+●**Expected code style**
+
+**bad**
+
+```
+function test ()
+```
+
+**good**
+
+```
+function test()
+```
+
+
+●**Settings of Webstorm**
+
+Go **Settings > Editor > Code Style > JavaScript > Spaces Tab**
+
+- Uncheck **Before Parentheses/In function expression**
+
+
+![image](https://user-images.githubusercontent.com/11747460/76206591-a772c600-623f-11ea-8006-a3249351784a.png)
+
+
+●**Typical lint error message**  
+
+```
+Unexpected space before function parentheses
+```
+
+### Change "Object literal braces","ES6 import/export braces" for ESLint's " object-curly-spacing"
+
+●**Expected code style**
+
+**bad**
+
+```
+export {default} from './my-computer';
+```
+
+**good**
+
+```
+export { default } from './my-computer';
+```
+
+●**Settings of Webstorm**
+
+Go **Settings > Editor > Code Style > JavaScript > Spaces Tab**
+
+- Uncheck **Object literal braces**
+- Uncheck **ES6 import/export braces**
+
+
+![image](https://user-images.githubusercontent.com/11747460/76206627-b6f20f00-623f-11ea-97ba-9bc63e08467f.png)
+
+
+●**Typical lint error message**
+
+```  
+A space is required after '{'  
+A space is required after '}'
+```
+
+### Change "Line separator" for ESLint's "linebreak-style"
+
+●**Expected code style**
+
+**bad**  
+linebreak with CRLF
+
+**good**  
+linebreak with LF
+
+
+●**Settings of Webstorm**
+
+Go **Settings > Editor > Code Style > General Tab**
+
+- Select **Unix and macOS(\n)** as **Line seperator**:
+
+![image](https://user-images.githubusercontent.com/11747460/76206809-046e7c00-6240-11ea-9236-f9516988f2e2.png)
+
+●**Typical lint error message**
+
+```  
+Expected linebreaks to be 'LF' but found 'CRLF'
+```
+
+### Enable Webstorm's **ESLint support**
+
+●**Settings of Webstorm**
+
+Go **Languages&Frameworks > JavaScript > Code Quality Tools > ESLint
+
+- Check **Automatic ESLint configuration**
+
+![image](https://user-images.githubusercontent.com/11747460/76211345-58ca2980-6249-11ea-8d29-410af84ff882.png)

@@ -33,7 +33,7 @@ module.exports = (env, argv) => {
         root: 'for Root',
         commonjs: 'for CommonJS environment',
         commonjs2: 'for CommonJS2 environment',
-        amd: 'for AMD environment'
+        amd: 'for AMD environment',
       }
     },
 
