@@ -277,8 +277,8 @@ export { default } from './my-computer';
 
 Go **Settings > Editor > Code Style > JavaScript > Spaces Tab**
 
-- Uncheck **Object literal braces**
-- Uncheck **ES6 import/export braces**
+- Check **Object literal braces**
+- Check **ES6 import/export braces**
 
 
 ![image](https://user-images.githubusercontent.com/11747460/76206627-b6f20f00-623f-11ea-97ba-9bc63e08467f.png)
