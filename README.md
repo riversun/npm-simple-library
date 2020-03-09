@@ -92,22 +92,58 @@ npm test:coverage
 
 # How to handle library
 
-### How webpack builds code as a library.
+## How webpack builds code as a library.
 
 - Please see [this article (english)](https://dev.to/riversun/recipes-on-how-to-create-a-library-that-supports-both-browser-and-node-js-201m).
 
-### Publish as a npm package
+## Publish as a npm package
 
 ```
 npm publish --access=public
 ```
 
-### Use library
+## Use library
 
 ### Use on browser
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use library directly with &lt;script&gt; tag</title>
+</head>
+<body>
+<h3>Use library directly with &lt;script&gt; tag</h3>
+<script src="https://cdn.jsdelivr.net/npm/@riversun/npm-simple-library@1.0.0/lib/computer.js"></script>
+<script>
+
+  //replace console.log with document.write to make the behavior visible
+  console.log = (m) => {
+    document.write(`<div style=" font-family: monospace;">${m}</div><br>`);
+  };
+
+  const computer = new Computer();
+
+  console.log(`1 + 2 = ${computer.add(1, 2)}`);
+  console.log(`1 - 2 = ${computer.sub(1, 2)}`);
+
+</script>
+</body>
+</html>
+
+```
+
 ### Use on node
 
+```javascript
+const Computer = require('@riversun/npm-simple-library');
+
+const computer = new Computer();
+
+console.log(`1 + 2 = ${computer.add(1, 2)}`);
+console.log(`1 - 2 = ${computer.sub(1, 2)}`);
+```
 
 # Installed modules
 
