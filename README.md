@@ -2,6 +2,7 @@
 
 Library template for both node and browser
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bd35641c855b4556afc1076c294f110d)](https://app.codacy.com/manual/riversun/npm-simple-library?utm_source=github.com&utm_medium=referral&utm_content=riversun/npm-simple-library&utm_campaign=Badge_Grade_Dashboard)
 [![npm version](https://badge.fury.io/js/%40riversun%2Fnpm-simple-library.svg)](https://badge.fury.io/js/%40riversun%2Fnpm-simple-library)
 [![CircleCI](https://circleci.com/gh/riversun/npm-simple-library.svg?style=shield)](https://circleci.com/gh/riversun/npm-simple-library)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
