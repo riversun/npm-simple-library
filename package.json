@@ -1,0 +1,45 @@
+{
+  "name": "@riversun/npm-simple-library",
+  "version": "1.0.0",
+  "description": "Library template for both node and browser using ES6,Webpack,Babel,Jest,ESLint",
+  "main": "lib/computer.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js",
+    "start:node": "node example/example-run-on-node-js.js",
+    "build": "webpack --config webpack.config.js",
+    "release": "webpack --config webpack.config.js --mode production",
+    "test": "jest -i",
+    "test:coverage": "npm run test -- --coverage"
+  },
+  "author": "Tom Misawa <riversun.org@gmail.com> (https://github.com/riversun)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riversun/npm-simple-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/riversun/npm-simple-library/issues"
+  },
+  "homepage": "https://github.com/riversun/npm-simple-library#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^25.1.0",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {},
+  "directories": {
+    "test": "test"
+  }
+}
