@@ -10,7 +10,10 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
-            - run: npm test
+            - run: npm run test:coverage
+            - run:
+                name: post coverage
+                command: cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
 workflows:
     build-and-test:
       jobs:
